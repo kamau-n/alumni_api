@@ -18,6 +18,8 @@ import { Admins } from "../models/admins.model";
 
 export const appDataSource = new DataSource({
     type: "mysql",
+    host: "84.54.23.87",
+    port: 3306, // Default MySQL port
     database: "alumni_db",
     username: "User",
     password: "Kamau_016",
