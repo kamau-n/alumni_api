@@ -19,8 +19,8 @@ import { Admins } from "../models/admins.model";
 export const appDataSource = new DataSource({
     type: "mysql",
     database: "alumni_db",
-    username: "root",
-    password: "kamau016",
+    username: "User",
+    password: "Kamau_016",
     //logging: true,
     synchronize: true,
     entities: [Login, Institution, Alumni, Posts, Events, Comments, Likes, CommentsReply, Messages, Interests, Chat, UserInterest, InstitutionConnection, Admins]
