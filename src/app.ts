@@ -66,7 +66,7 @@ appDataSource.initialize()
   .then(() => { console.log("the connection has been established") })
   .catch((err: any) => {
     console.log("there was a problem in the connection" + err)
-    response.json({ mg: "unable to connect to server" })
+   // response.json({ mg: "unable to connect to server" })
   })
 
 
@@ -143,7 +143,7 @@ io.on('connection', (socket) => {
 
 
 try {
-  server.listen(8000, () => {
+  server.listen(8081, () => {
     console.log("we have been connectefd to a port")
   })
 
