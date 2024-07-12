@@ -79,12 +79,12 @@ export const signIn = async (req: Request, res: Response) => {
                     }, "i hve a secret", { expiresIn: "1h" })
 
                     const refreshToken = jwt.sign({
-                        id: new_user.login_id,
-                        name: new_user.login_username,
-                        address: new_user.login_location,
-                        email: new_user.login_email,
-                        role: new_user.login_role,
-                        contact: new_user.login_contact,
+                        id: User2.login_id,
+                        name: User2.login_name,
+                        address: User2.login_location,
+                        email: User2.login_email,
+                        role: User2.login_role,
+                        contact: User2.login_contact,
 
                     }, "i hve a secret", { expiresIn: "1y" })
 
