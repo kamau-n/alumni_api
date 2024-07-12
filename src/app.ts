@@ -29,6 +29,7 @@ import { adminRouter } from "./routes/admin.routes";
 
 const app = express()
 
+const PORT  = 8081
 
 const server = http.createServer(app);
 export const io = new SocketIOServer(server, {
@@ -143,8 +144,8 @@ io.on('connection', (socket) => {
 
 
 try {
-  server.listen(8081, () => {
-    console.log("we have been connectefd to a port")
+  server.listen(PORT, () => {
+    console.log("we have been connectefd to a port" + PORT)
   })
 
 }
