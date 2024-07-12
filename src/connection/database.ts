@@ -1,5 +1,5 @@
 import { Admin, DataSource } from "typeorm";
-import { Users } from "../models/users.model";
+
 
 
 
@@ -13,7 +13,6 @@ export const appDataSource = new DataSource({
     password: "Kamau_016",
     logging: true,
     synchronize: true,
-    entities: [Users]
 
 
 
