@@ -3,6 +3,7 @@ import { Router } from "express";
 import { AuthenticateToken, DeleteUser, RefreshToken, ResetEmail, ResetPassword, getUser, makeSchoolAdmin, signIn, updateUser } from "../controller/signin.controller";
 import { getUsers, signUp } from "../controller/signupcontroller";
 import { upload } from "../middlewares/imageupload.middleware";
+import {requireAuthentication } from "../middlewares/authentication/authenticated.middleware";
 
 
 
@@ -21,7 +22,7 @@ authRouter.delete("/deleteuser/:id", DeleteUser)
 authRouter.get("/user/:id", getUser)
 
 authRouter.post("/makeadmin", makeSchoolAdmin)
-authRouter.post("/user/update", updateUser)
+authRouter.post("/user/update",updateUser)
 
 
 export default authRouter;
