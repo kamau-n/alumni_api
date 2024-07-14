@@ -2,10 +2,10 @@ module.exports = {
   apps: [
     {
       name: 'alumni_api',
-      script: 'pnpm',
+      script: 'npm',
       args: 'build:deploy',
       exec_mode: 'cluster',
-      instances: 'max'
+      instances: 2
     }
   ]
 }
