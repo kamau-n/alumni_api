@@ -18,6 +18,7 @@ import { chatRouter } from "./routes/chat.routes";
 import { Messages } from "./models/messages.models";
 import { interestsRoute } from "./routes/interests.route";
 import { adminRouter } from "./routes/admin.routes";
+import { HomeRouter } from "./routes/homes.routes";
 
 
 
@@ -57,7 +58,7 @@ app.use('/uploads', express.static('uploads'))
 
 
 app.use(express.json())
-app.use("/", authRouter, instRouter, alumniRoute, postRouter, eventsRouter, chatRouter, interestsRoute, adminRouter)
+app.use("/",HomeRouter, authRouter, instRouter, alumniRoute, postRouter, eventsRouter, chatRouter, interestsRoute, adminRouter)
 
 
 
