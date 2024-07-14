@@ -7,7 +7,7 @@
     "start": "nodemon dist/app.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "build:deploy": "tsc && npm dist/app.js"
+    "build:deploy": "node  dist/app.js"
   },
   "repository": {
     "type": "git",
