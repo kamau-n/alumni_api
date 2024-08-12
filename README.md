@@ -1,4 +1,4 @@
-## Alumni Application
+# Alumni Application
 ### Technologies Used
 
 - Express
