@@ -3,5 +3,5 @@
 
 - Express
 - JWT
-- Web Sockets
+- Web Sockets/Socket IO
 - Type ORM
